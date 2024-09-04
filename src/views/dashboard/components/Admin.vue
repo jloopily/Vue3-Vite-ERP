@@ -36,7 +36,7 @@ const clearOutput = () => {
 
 <template>
   <el-card class="app-container center">
-    <el-empty description="欢迎来到 admin 角色专属首页" />
+    <!-- <el-empty description="欢迎来到 admin 角色专属首页" /> -->
     <el-input v-model="inputValue" class="input" placeholder="请输入数字数组（用逗号分隔）" />
 
     <el-select v-model="selectedAlgorithm" class="select" placeholder="选择排序算法">
