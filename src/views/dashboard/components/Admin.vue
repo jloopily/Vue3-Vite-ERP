@@ -41,14 +41,14 @@ const clearOutput = () => {
 
     <el-select v-model="selectedAlgorithm" class="select" placeholder="选择排序算法">
       <el-option label="优化快速排序" value="optimizedFastSort" />
-      <el-option label="冒泡排序" value="bubbleSort" />
+      <el-option label="冒泡排序（不推荐使用）" value="bubbleSort" />
       <el-option label="快速排序" value="fastSort" />
     </el-select>
 
     <el-button type="primary" @click="handleClick" class="button">提交</el-button>
     <el-button type="danger" @click="clearOutput" class="button">清空输出</el-button>
 
-    <el-card class="output">{{ outputValues.join(", ") }}</el-card>
+    <el-card class="output" style="overflow-y: auto; max-height: 200px">{{ outputValues.join(", ") }}</el-card>
     <div class="time">排序时间: {{ executionTime }} 毫秒</div>
     <!-- 显示排序时间 -->
   </el-card>
