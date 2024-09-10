@@ -2,52 +2,54 @@
 
 <template>
   <div class="container">
-    <header class="header">
+    <el-header class="header">
       <!-- Header content here -->
       <h1>11</h1>
-    </header>
-    <main class="main">
-      <div class="column">
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 1</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 3</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 5</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 7</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 2</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 4</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 6</h1>
-        </div>
-        <div class="post">
-          <!-- Post content here -->
-          <h1>Post 8</h1>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
+    </el-header>
+    <el-main class="main">
+      <el-row>
+        <el-col :span="12">
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 1</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 3</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 5</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 7</h1>
+          </el-card>
+        </el-col>
+        <el-col :span="12">
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 2</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 4</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 6</h1>
+          </el-card>
+          <el-card class="post">
+            <!-- Post content here -->
+            <h1>Post 8</h1>
+          </el-card>
+        </el-col>
+      </el-row>
+    </el-main>
+    <el-footer class="footer">
       <!-- Footer content here -->
       <h1>44</h1>
-    </footer>
+    </el-footer>
   </div>
 </template>
 
